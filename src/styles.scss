@@ -8,3 +8,34 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: center;
   align-items: center;
 }
+
+// Menu styles
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+
+  & .material-symbols-outlined {
+    font-size: 40px !important;
+  }
+}
+
+.title__container {
+  column-gap: 20px;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 20px;
+  font-size: 18px;
+  list-style: none;
+
+  &--item a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.selected {
+  color: indigo !important;
+}
+// Menu styles
