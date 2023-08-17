@@ -1,3 +1,27 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
+}
+
+.title__container {
+  column-gap: 20px;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 20px;
+  font-size: 18px;
+  list-style: none;
+  
+  &--item a {
+    color: white;
+    text-decoration: none;
+  }
+}
 .selected {
-  background-color: lightblue;
+  color: indigo !important;
 }
