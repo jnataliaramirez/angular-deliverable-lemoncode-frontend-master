@@ -9,14 +9,16 @@
         <h2 class="login__title">Welcome</h2>
         <form class="login__form">
           <mat-form-field>
-            <mat-label>Username:</mat-label>
-            <input matInput />
+            <mat-label>Email:</mat-label>
+            <input matInput [formControl]="email" placeholder="master@lemoncode.net"/>
+            <mat-error *ngIf="email.invalid">{{getErrorEmailMessage()}}</mat-error>
           </mat-form-field>
           <mat-form-field>
             <mat-label>Password:</mat-label>
-            <input matInput />
+            <input matInput [formControl]="password" placeholder="12345678" />
+            <mat-error *ngIf="password.invalid">{{getErrorPasswordMessage()}}</mat-error>
           </mat-form-field>
-          <button mat-flat-button color="primary">Login</button>
+          <button type="submit" mat-flat-button color="primary">Login</button>
         </form>
       </mat-card-content>
     </mat-card>

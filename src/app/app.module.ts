@@ -2,6 +2,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
@@ -36,7 +38,8 @@ import { PublicMenuComponent } from './components/public-menu/public-menu.compon
   imports: [
     AppRoutingModule,
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
