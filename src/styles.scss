@@ -1,12 +1,20 @@
 // Material Angular styles
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .flex-row-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 // Material Angular styles
 
 // Global variables
@@ -16,17 +24,18 @@ $color-accent: #f64081;
 
 // Menu styles
 .toolbar {
-  grid-area: header !important;
   display: flex;
   justify-content: space-between;
-
-  & .material-symbols-outlined {
-    font-size: 40px !important;
-  }
 }
 
 .title__container {
   column-gap: 20px;
+
+  & .material-symbols-outlined {
+    font-size: 40px !important;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .nav__list {
@@ -44,4 +53,5 @@ $color-accent: #f64081;
 .selected {
   color: $color-primary !important;
 }
+
 // Menu styles

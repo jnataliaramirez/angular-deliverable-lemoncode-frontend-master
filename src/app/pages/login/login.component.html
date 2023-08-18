@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="login">
+  <div class="login__wrapper">
+    <mat-card class="flex-row-center">
+      <mat-card-content class="login__mat-card-content">
+        <mat-icon
+          fontIcon="sentiment_very_satisfied"
+          class="login__icon"
+        ></mat-icon>
+        <h2 class="login__title">Welcome</h2>
+        <form class="login__form">
+          <mat-form-field>
+            <mat-label>Username:</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password:</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <button mat-flat-button color="primary">Login</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

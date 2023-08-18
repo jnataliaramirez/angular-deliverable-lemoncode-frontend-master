@@ -1,7 +1,10 @@
 @import '../../../styles.scss';
 
 .footer {
-  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 0px;
 
   &__text {
     font-size: 16px;
