@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+
+.footer {
+  grid-area: footer;
+
+  &__text {
+    font-size: 16px;
+    text-align: center;
+    color: $color-accent;
+  }
+}

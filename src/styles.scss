@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
+// Material Angular styles
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -8,9 +7,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: center;
   align-items: center;
 }
+// Material Angular styles
+
+// Global variables
+$color-primary : indigo;
+$color-accent: #f64081;
+// Global variables
 
 // Menu styles
 .toolbar {
+  grid-area: header !important;
   display: flex;
   justify-content: space-between;
 
@@ -36,6 +42,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .selected {
-  color: indigo !important;
+  color: $color-primary !important;
 }
 // Menu styles

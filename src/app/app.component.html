@@ -1,7 +1,12 @@
-<app-public-menu></app-public-menu>
-<app-private-menu></app-private-menu>
+<div class="app__container">
+  
+  <!-- <app-public-menu></app-public-menu> -->
+  <app-private-menu></app-private-menu>
+  <div app__container--main>
 
-<app-public-header></app-public-header>
-<router-outlet></router-outlet>
-
-<app-footer></app-footer>
+    <app-public-header></app-public-header>
+    <router-outlet></router-outlet>
+  </div>
+  
+  <app-footer></app-footer>
+</div>
