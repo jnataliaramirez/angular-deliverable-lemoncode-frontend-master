@@ -16,7 +16,7 @@
     width: 80%;
     padding-bottom: 40px !important;
   }
-
+  
   &__icon {
     width: 100%;
     height: 100%;
@@ -24,17 +24,18 @@
     text-align: center;
     color: $color-accent;
   }
-
+  
   &__title {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
     color: $color-accent;
   }
-
-
+  
+  
   &__form {
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
   }
 }

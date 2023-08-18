@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
 
 @Component({
@@ -12,7 +12,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   email = new FormControl("", [Validators.required, Validators.email]);
-
   getErrorEmailMessage() {
     if (this.email.hasError("required")) {
       return "You must enter a value";
@@ -25,7 +24,6 @@ export class LoginComponent implements OnInit {
     Validators.required,
     Validators.minLength(8),
   ]);
-
   getErrorPasswordMessage() {
     if (this.password.hasError("required")) {
       return "You must enter a value";

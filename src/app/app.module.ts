@@ -4,7 +4,6 @@ import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
 import { CrudComponent } from './pages/crud/crud.component';
