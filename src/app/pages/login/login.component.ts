@@ -11,7 +11,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  emailPlaceholder: string = "master@lemoncode.net";
+  passwordsPlaceholder: string = "12345678";
+
   email = new FormControl("", [Validators.required, Validators.email]);
+  password = new FormControl("", [
+    Validators.required,
+    Validators.minLength(8),
+  ]);
+
   getErrorEmailMessage() {
     if (this.email.hasError("required")) {
       return "You must enter a value";
@@ -19,11 +27,6 @@ export class LoginComponent implements OnInit {
 
     return this.email.hasError("email") ? "Not a valid email" : "";
   }
-
-  password = new FormControl("", [
-    Validators.required,
-    Validators.minLength(8),
-  ]);
   getErrorPasswordMessage() {
     if (this.password.hasError("required")) {
       return "You must enter a value";
@@ -33,4 +36,6 @@ export class LoginComponent implements OnInit {
       ? "Password should be at least 8 characters long"
       : "";
   }
+
+  
 }
