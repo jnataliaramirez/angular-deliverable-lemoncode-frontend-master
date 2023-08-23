@@ -10,15 +10,32 @@
         <form class="login__form">
           <mat-form-field>
             <mat-label>Email:</mat-label>
-            <input matInput [formControl]="email" placeholder={{emailPlaceholder}}/>
-            <mat-error *ngIf="email.invalid">{{getErrorEmailMessage()}}</mat-error>
+            <input
+              [formControl]="email"
+              placeholder="{{ emailPlaceholder }}"
+              type="email"
+              name="email"
+              required="required"
+              matInput
+            />
+            <mat-error *ngIf="email.invalid">{{
+              getErrorEmailMessage()
+            }}</mat-error>
           </mat-form-field>
           <mat-form-field>
             <mat-label>Password:</mat-label>
-            <input matInput [formControl]="password" [placeholder]=passwordsPlaceholder />
-            <mat-error *ngIf="password.invalid">{{getErrorPasswordMessage()}}</mat-error>
+            <input
+              [formControl]="password"
+              [placeholder]="passwordPlaceholder"
+              type="password"
+              required="required"
+              matInput
+            />
+            <mat-error *ngIf="password.invalid">{{
+              getErrorPasswordMessage()
+            }}</mat-error>
           </mat-form-field>
-          <button type="submit" mat-flat-button color="primary">Login</button>
+          <button type="submit" (click)="onLogin()" mat-flat-button color="primary">Login</button>
         </form>
       </mat-card-content>
     </mat-card>

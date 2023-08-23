@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
@@ -39,6 +42,8 @@ import { PublicMenuComponent } from './components/public-menu/public-menu.compon
     BrowserModule,
     MaterialModule,
     ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

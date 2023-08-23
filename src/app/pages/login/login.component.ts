@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
 
 @Component({
@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   emailPlaceholder: string = "master@lemoncode.net";
-  passwordsPlaceholder: string = "12345678";
+  passwordPlaceholder: string = "12345678";
 
   email = new FormControl("", [Validators.required, Validators.email]);
   password = new FormControl("", [
@@ -37,5 +37,18 @@ export class LoginComponent implements OnInit {
       : "";
   }
 
-  
+  onLogin() {
+    console.log(this.email.value);
+    console.log(this.password.value);
+  }
+
+  // const handleNavigation = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+
+  //   if (username === "admin" && password === "test") {
+  //     navigate("/list");
+  //   } else {
+  //     alert("Usuario / contraseña no valido, psst... admin / test");
+  //   }
+  // };
 }
