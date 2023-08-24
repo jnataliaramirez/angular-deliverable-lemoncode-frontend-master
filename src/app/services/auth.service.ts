@@ -22,7 +22,7 @@ export class AuthService {
     this.userIsConnected = false;
   }
 
-  isLooged(): boolean {
+  isLoged(): boolean {
     return this.userIsConnected;
   }
 
