@@ -1,15 +1,14 @@
 <header>
   <mat-toolbar class="toolbar" color="accent">
     <div class="flex-row-center title__container">
-      <span class="material-symbols-outlined">
-        joystick
-      </span>
+      <mat-icon fontIcon="yard" class="material-symbols-outlined"></mat-icon>
       <h1> My Angular Page </h1>
     </div>
     
-    <div>{{getUserName()}}</div>
-    <app-private-menu></app-private-menu>
-    
-    <app-button-logout></app-button-logout>
+    <div class="flex-row-center nav__container">
+      <p> {{getUserName()}} </p>
+      <app-private-menu></app-private-menu>
+      <app-button-logout></app-button-logout>
+    </div>
   </mat-toolbar>
 </header>
