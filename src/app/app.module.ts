@@ -1,11 +1,10 @@
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from "@angular/forms";
 import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from "@angular/forms";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
@@ -39,11 +38,11 @@ import { PublicMenuComponent } from './components/public-menu/public-menu.compon
   ],
   imports: [
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

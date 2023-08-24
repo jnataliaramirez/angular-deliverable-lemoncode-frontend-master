@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
 
 @Component({
@@ -36,19 +36,4 @@ export class LoginComponent implements OnInit {
       ? "Password should be at least 8 characters long"
       : "";
   }
-
-  onLogin() {
-    console.log(this.email.value);
-    console.log(this.password.value);
-  }
-
-  // const handleNavigation = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-
-  //   if (username === "admin" && password === "test") {
-  //     navigate("/list");
-  //   } else {
-  //     alert("Usuario / contraseña no valido, psst... admin / test");
-  //   }
-  // };
 }
