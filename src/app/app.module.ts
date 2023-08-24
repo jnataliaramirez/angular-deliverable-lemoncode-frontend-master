@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
+import { ButtonLogoutComponent } from './components/button-logout/button-logout.component';
 import { CrudComponent } from './pages/crud/crud.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -24,6 +25,7 @@ import { PublicMenuComponent } from './components/public-menu/public-menu.compon
   declarations: [
     AboutUsComponent,
     AppComponent,
+    ButtonLogoutComponent,
     CrudComponent,
     DashboardComponent,
     FooterComponent,
