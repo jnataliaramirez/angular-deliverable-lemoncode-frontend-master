@@ -1,5 +1,10 @@
-<app-public-header></app-public-header>
-<app-private-header></app-private-header>
+<div *ngIf="isLooged()">
+  <app-private-header></app-private-header>
+</div>
+
+<div *ngIf="!isLooged()">
+  <app-public-header></app-public-header>
+</div>
 
 <router-outlet></router-outlet>
 
