@@ -4,13 +4,13 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class AuthService {
-  private userName: string = "";
+  private userName: string | null = "";
   private userIsConnected: boolean = false;
 
   constructor() {}
 
-  login(email: string, password: string): boolean {
-    if (email === "master@lemoncode.net" && password === "12345678") {
+  login(email: string | null, password: string | null): boolean {
+    if (email === "master@lemoncode.net" && password === "1") {
       this.userIsConnected = true;
       return true;
     } else {
@@ -26,11 +26,11 @@ export class AuthService {
     return this.userIsConnected;
   }
 
-  setUserName(userName: string): void {
+  setUserName(userName: string | null): void {
     this.userName = userName;
   }
 
-  getUserName(): string {
+  getUserName(): string | null {
     return this.userName;
   }
 }
