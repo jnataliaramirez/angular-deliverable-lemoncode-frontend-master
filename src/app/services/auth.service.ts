@@ -1,16 +1,36 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class AuthService {
+  private userName: string = "";
+  private userIsConnected: boolean = false;
 
-  constructor() { }
-  
-  onLogin(email, value): boolean {
-    return (
-      email.value === "master@lemoncode.net" &&
-      password.value === "12345678"
-    );
+  constructor() {}
+
+  login(email: string, password: string): boolean {
+    if (email === "master@lemoncode.net" && password === "12345678") {
+      this.userIsConnected = true;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  logout(): void {
+    this.userIsConnected = false;
+  }
+
+  isLooged(): boolean {
+    return this.userIsConnected;
+  }
+
+  setUserName(userName: string): void {
+    this.userName = userName;
+  }
+
+  getUserName(): string {
+    return this.userName;
   }
 }
