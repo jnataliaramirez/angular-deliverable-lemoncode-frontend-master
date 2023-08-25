@@ -30,12 +30,13 @@ export class AuthService {
 
   isLoggedIn(): boolean {
     if (localStorage.getItem("userLoggedIn") === "true") {
+      this.userLoggedIn = true;
       return true;
     }
     return this.userLoggedIn;
   }
 
-  getuserEmail(): string {
+  getUserEmail(): string {
     if (localStorage.getItem("userEmail")) {
       this.userEmail = localStorage.getItem("userEmail") as string;
     }
