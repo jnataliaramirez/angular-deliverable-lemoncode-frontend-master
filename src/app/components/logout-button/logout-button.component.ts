@@ -3,9 +3,9 @@ import { Router } from "@angular/router";
 import { AuthService } from "src/app/services/auth.service";
 
 @Component({
-  selector: "app-button-logout",
-  templateUrl: "./button-logout.component.html",
-  styleUrls: ["./button-logout.component.scss"],
+  selector: "app-logout-button",
+  templateUrl: "./logout-button.component.html",
+  styleUrls: ["./logout-button.component.scss"],
 })
 export class ButtonLogoutComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) {}

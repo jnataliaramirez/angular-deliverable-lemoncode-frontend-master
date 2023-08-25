@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AppComponent } from './app.component';
-import { ButtonLogoutComponent } from './components/button-logout/button-logout.component';
+import { ButtonLogoutComponent } from "./components/logout-button/logout-button.component";
 import { CrudComponent } from './pages/crud/crud.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
