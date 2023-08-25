@@ -4,14 +4,17 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class AuthService {
-  private userName: string | null = "";
-  private userIsConnected: boolean = false;
+  private userEmail: string = "";
+  private userLoggedIn: boolean = false;
 
   constructor() {}
 
-  login(email: string | null, password: string | null): boolean {
+  login(email: string, password: string): boolean {
     if (email === "master@lemoncode.net" && password === "1") {
-      this.userIsConnected = true;
+      this.userLoggedIn = true;
+      this.userEmail = email;
+      localStorage.setItem("userLoggedIn", "true");
+      localStorage.setItem("userEmail", email);
       return true;
     } else {
       return false;
@@ -19,18 +22,24 @@ export class AuthService {
   }
 
   logout(): void {
-    this.userIsConnected = false;
+    this.userLoggedIn = false;
+    this.userEmail = "";
+    localStorage.removeItem("userLoggedIn");
+    localStorage.removeItem("userEmail");
   }
 
-  isLoged(): boolean {
-    return this.userIsConnected;
+  isLoggedIn(): boolean {
+    if (localStorage.getItem("userLoggedIn") === "true") {
+      return true;
+    }
+    return this.userLoggedIn;
   }
 
-  setUserName(userName: string | null): void {
-    this.userName = userName;
-  }
+  getuserEmail(): string {
+    if (localStorage.getItem("userEmail")) {
+      this.userEmail = localStorage.getItem("userEmail") as string;
+    }
 
-  getUserName(): string | null {
-    return this.userName;
+    return this.userEmail;
   }
 }

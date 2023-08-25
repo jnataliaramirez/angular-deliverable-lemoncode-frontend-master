@@ -1,8 +1,8 @@
-<div *ngIf="isLoged()">
+<div *ngIf="isLoggedIn()">
   <app-private-header></app-private-header>
 </div>
 
-<div *ngIf="!isLoged()">
+<div *ngIf="!isLoggedIn()">
   <app-public-header></app-public-header>
 </div>
 

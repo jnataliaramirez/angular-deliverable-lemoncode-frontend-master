@@ -11,7 +11,7 @@ export class PrivateHeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  getUserName(): string | null {
-    return this.authService.getUserName();
+  getuserEmail(): string  {
+    return this.authService.getuserEmail();
   }
 }

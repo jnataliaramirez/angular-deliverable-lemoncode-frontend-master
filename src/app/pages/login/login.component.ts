@@ -39,19 +39,18 @@ export class LoginComponent implements OnInit {
       : "";
   }
 
-  setUserName(): void {
-    this.authService.setUserName(this.email.value);
-  }
-
   login(): void {
-    if (this.authService.login(this.email.value, this.password.value)) {
-      this.setUserName();
+    if (
+      this.authService.login(
+        this.email.value as string,
+        this.password.value as string
+      )
+    ) {
       this.router.navigate(["/dashboard"]);
     }
   }
 
   logout(): void {
     this.authService.logout();
-    this.authService.setUserName(null);
   }
 }
