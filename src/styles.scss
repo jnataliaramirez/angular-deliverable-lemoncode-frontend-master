@@ -57,10 +57,15 @@ body {
 .toolbar {
   display: flex;
   justify-content: space-between;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .title__container {
   column-gap: 20px;
+  color: white;
 
   & .material-symbols-outlined {
     font-size: 40px !important;
