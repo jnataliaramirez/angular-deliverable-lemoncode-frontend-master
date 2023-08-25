@@ -1,6 +1,6 @@
 # Angular project for the frontend master's at Lemoncode 👩🏻‍💻🚀
 
-This project is the deliverable for the Angular class of the Lemoncode Master program. The goal of this project is to practice various aspects of Angular development while creating an application that focuses on user authentication and navigation.
+This project is the deliverable of the Angular class of the Lemoncode Master program. The goal of this project is to practice various aspects of Angular development while creating an application that focuses on user authentication and navigation.
 
 ## Project Theme 📚
 
