@@ -38,4 +38,16 @@
     flex-direction: column;
     row-gap: 1rem;
   }
+
+  &__secret {
+    margin-top: 8px;
+    padding: 8px;
+    border: solid 1px $color-accent;
+    border-radius: 8px;
+    border-color: $color-accent;
+
+    & p {
+      margin: 0;
+    }
+  }
 }

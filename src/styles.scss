@@ -1,20 +1,18 @@
-// Material Angular styles
+// Global variables
+$color-primary : indigo;
+$color-accent: #f64081;
+// Global variables
+
 html,
 body {
   height: 100%;
-  
+  color: $color-primary;
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
-
-// Global variables
-$color-primary : indigo;
-$color-accent: #f64081;
-// Global variables
 
 // Global Styles 
 .flex-row-center {
@@ -23,20 +21,36 @@ $color-accent: #f64081;
   align-items: center;
 }
 
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper__container {
   margin-top: 24px;
   margin-right: auto;
-  margin-left:  auto;
+  margin-left: auto;
   max-width: 960px;
   padding-right: 10px;
-  padding-left:  10px;
-  color: $color-primary;
+  padding-left: 10px;
+  font-size: 20px !important;
+  line-height: 30px;
 }
 
 .title {
   font-size: 28px !important;
   color: $color-accent;
 }
+
+.lorem {
+  padding: 24px 0px;
+  font-size: 20px !important;
+  color: $color-primary;
+
+}
+
 // Global Styles 
 
 // Menu styles
