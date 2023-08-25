@@ -2,6 +2,7 @@
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -9,18 +10,34 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+
+// Global variables
+$color-primary : indigo;
+$color-accent: #f64081;
+// Global variables
+
+// Global Styles 
 .flex-row-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Material Angular styles
+.wrapper__container {
+  margin-top: 24px;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left:  10px;
+  color: $color-primary;
+}
 
-// Global variables
-$color-primary : indigo;
-$color-accent: #f64081;
-// Global variables
+.title {
+  font-size: 28px !important;
+  color: $color-accent;
+}
+// Global Styles 
 
 // Menu styles
 .toolbar {
