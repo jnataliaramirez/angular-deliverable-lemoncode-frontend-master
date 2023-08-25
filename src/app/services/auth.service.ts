@@ -10,7 +10,7 @@ export class AuthService {
   constructor() {}
 
   login(email: string, password: string): boolean {
-    if (email === "master@lemoncode.net" && password === "1") {
+    if (email === "master@lemoncode.net" && password === "12345678") {
       this.userLoggedIn = true;
       this.userEmail = email;
       localStorage.setItem("userLoggedIn", "true");
